@@ -1,0 +1,12 @@
+logs/*
+!.gitkeep
+node_modules/
+tmp
+.DS_Store
+.idea
+solution/builds/
+solution-es5/builds/
+starter/builds/
+solution/
+solution-es5/
+~
