@@ -8,8 +8,3 @@ var todoList = [
     {id: 2, task: 'task 2', isCompleted: false},
     {id: 3, task: 'task 3', isCompleted: false}
 ];
-
-ReactDOM.render(
-    <Todo list={todoList}/>,
-    document.getElementById("container")
-);
