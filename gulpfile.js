@@ -11,8 +11,8 @@ const uglify = require('gulp-uglify');
 const connect = require('gulp-connect');
 
 js('starter');
-js('starter2');
-js('starter3');
+//js('starter2');
+//js('starter3');
 js('solution');
 js('solution-es5');
 
