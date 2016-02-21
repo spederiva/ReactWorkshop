@@ -11,11 +11,15 @@ const uglify = require('gulp-uglify');
 const connect = require('gulp-connect');
 
 js('starter');
+js('starter2');
+js('starter3');
 js('solution');
 js('solution-es5');
 
 gulp.task('watch', () => {
     gulp.watch(['starter/**/*.jsx', '!starter/builds/**/*.js'], ['js-starter']);
+    gulp.watch(['starter2/**/*.jsx', '!starter2/builds/**/*.js'], ['js-starter2']);
+    gulp.watch(['starter3/**/*.jsx', '!starter3/builds/**/*.js'], ['js-starter3']);
     gulp.watch(['solution/**/*.jsx', '!solution/builds/**/*.js'], ['js-solution']);
     gulp.watch(['solution-es5/**/*.jsx', '!solution-es5/builds/**/*.js'], ['js-solution-es5']);
     gulp.watch('./**/*.html', ['html']);
@@ -35,7 +39,7 @@ gulp.task('server', () => {
     });
 });
 
-gulp.task('default', ['watch', 'js-starter', 'js-solution', 'js-solution-es5', 'html', 'server'], () => {
+gulp.task('default', ['watch', 'js-starter3', 'js-starter2', 'js-starter', 'js-solution', 'js-solution-es5', 'html', 'server'], () => {
     gutil.log('React Workshop');
 });
 
